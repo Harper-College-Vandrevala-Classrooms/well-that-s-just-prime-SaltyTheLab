@@ -44,4 +44,14 @@ public class TestFactorizer {
   public void testnull() {
     assertEquals(null, factorizer.primes(1));
   }
+
+  @Test
+  public void testprime() {
+    assertEquals("true", factorizer.isprime(17));
+  }
+
+  @Test
+  public void testnotprime() {
+    assertEquals("false", factorizer.isprime(36));
+  }
 }
